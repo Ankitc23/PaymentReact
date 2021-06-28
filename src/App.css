@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #61dafb;
 }
 
 .App-logo {
@@ -27,6 +28,41 @@
 .App-link {
   color: #61dafb;
 }
+
+.banner{
+  background-image:url("https://i.pinimg.com/originals/bb/d8/7d/bbd87d382c94f58a5c5a7cd280a12098.jpg");
+  border-radius: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  height: 300px;
+  width: 300px;
+  margin-left: 570px;
+  }
+  
+  .footer{
+  margin-top: 80px;
+  width: 100%;
+  background: #61dafb;;
+  display: block;
+  height: 200px;
+  left: 0px;
+  bottom: 0;
+  background-image: url("https://www.marklimotours.com/uploads/4/6/9/2/46925537/797185_orig.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 200;
+  
+  }
+
+  
+
+  
+
+
+  
 
 @keyframes App-logo-spin {
   from {
