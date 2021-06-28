@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import StripeCheckout from 'react-stripe-checkout'
+import Banner from './banner'
+import Footer from './footer'
+import Backgroundimage from './backgroundimage'
 
 function App() {
+  const onToken = (token)=> {
+    console.log(token);
+  };
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <StripeCheckout
+        token={onToken}
+        stripeKey="pk_test_51Izlj5HyVTo8swfcXivaIvbSLdtefo7f5y8VphYvRucUUJ6MBg18AvmhSTUiHocITwEeYkulAcnKsDAA6R3LC46K00AflR13O5"
+        name= "Ankit Braces"
+        currency="usd"
+        amount="500000"
+
+        />
+        <Banner/>
+        <Footer/>
+        <Backgroundimage/>
     </div>
   );
 }
