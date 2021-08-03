@@ -2,7 +2,7 @@ import './App.css';
 import StripeCheckout from 'react-stripe-checkout'
 import Banner from './banner'
 import Footer from './footer'
-import Backgroundimage from './backgroundimage'
+
 
 function App() {
   const onToken = (token)=> {
@@ -22,7 +22,6 @@ function App() {
         />
         <Banner/>
         <Footer/>
-        <Backgroundimage/>
     </div>
   );
 }
